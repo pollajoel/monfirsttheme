@@ -1,0 +1,96 @@
+.boxpost1{
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.boxpost1:hover{ boxpost1-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1); }
+.boxpost1:before{
+    content: '';
+    background: linear-gradient(#833ab4,#fd1d1d,#fcb045);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) rotateX(360deg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transition: opacity 0.8s,height 0.2s ease 0.2s, width 0.2s ease 0.2s;
+}
+.boxpost1:hover:before{
+    height: 150%;
+    width: 150%;
+    opacity: 0.8;
+    transform: translateX(-50%) translateY(-50%) rotateX(0);
+}
+.boxpost1 img{
+    width: 100%;
+    height: auto;
+}
+.boxpost1 .boxpost1-content{
+    color: #fff;
+    width: 100%;
+    padding: 0 30px;
+    opacity: 0;
+    transform: rotateX(90deg) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0.4s;
+}
+.boxpost1:hover .boxpost1-content{
+    opacity: 1;
+    transform: rotateX(0deg) translateY(-50%) scale(1);
+}
+.boxpost1 .title{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 3px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+}
+.boxpost1 .post{
+    font-size: 16px;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-bottom:10px;
+    display: block;
+}
+.boxpost1 .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.boxpost1 .icon li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.boxpost1 .icon li a{
+    color: #fd1d1d;
+    background: #fff;
+    font-size: 20px;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50% 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s;
+}
+.boxpost1 .icon li a:hover{
+    color: #fff;
+    background: #fd1d1d;
+    text-decoration: none;
+    boxpost1-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+@media only screen and (max-width:990px){
+    .boxpost1{ margin-bottom: 30px; }
+}
+@media only screen and (max-width:479px){
+    .boxpost1 .title{ font-size: 20px; }
+}

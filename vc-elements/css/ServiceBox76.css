@@ -1,0 +1,85 @@
+.demo{ background: #6d6e72; }
+.service76Box{
+    padding: 130px 20px 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+.service76Box .service76-icon{
+    display: inline-block;
+    width: 200px;
+    height: 200px; 
+    line-height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #000 inset;
+    background: linear-gradient(to top,#8633cb,#884fb7 50%,#6d6e72 50%);
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: scale(1) translateX(-50%);
+    transition: all 0.8s ease 0s;
+}
+.service76Box:hover .service76-icon{ font-size: 65px; }
+.service76Box .title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.service76Box:hover .title{ color: #8939cb; }
+.service76Box .description{
+    font-size: 15px;
+    color: #808080;
+    line-height: 27px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.service76Box .read-more{
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    background: linear-gradient(to top,#8633cb,#884fb7);
+    border-radius: 10px 10px 0 0;
+    transform: translateY(50px);
+    transition: all 0.3s ease 0s;
+}
+.service76Box .read-more:hover{
+    color: #fff;
+    box-shadow: 0 0 5px #000;
+}
+.service76Box:hover .read-more{ transform: translateY(0); }
+.service76Box.yellow .service76-icon{ background: linear-gradient(to top,#f1b02b,#fddb18 50%,#6d6e72 50%); }
+.service76Box.yellow:hover .title{ color: #f1b02b; }
+.service76Box.yellow .read-more{ background: linear-gradient(to top,#f1b02b,#fddb18); }
+.service76Box.green .service76-icon{ background: linear-gradient(to top,#50c338,#9dea28 50%,#6d6e72 50%); }
+.service76Box.green:hover .title{ color: #50c338; }
+.service76Box.green .read-more{ background: linear-gradient(to top,#50c338,#9dea28); }
+.service76Box.pink .service76-icon{ background: linear-gradient(to top,#fe4090,#ff58a6 50%,#6d6e72 50%); }
+.service76Box.pink:hover .title{ color: #fe4090; }
+.service76Box.pink .read-more{ background: linear-gradient(to top,#fe4090,#ff58a6); }
+@media only screen and (max-width:1200px){
+    .service76Box .service76-icon{
+        width: 160px;
+        height: 160px;
+        line-height: 240px;
+        top: -80px;
+    }
+}
+@media only screen and (max-width:990px){
+    .service76Box{ margin-bottom: 30px; }
+    .service76Box .service76-icon{
+        width: 200px;
+        height: 200px;
+        line-height: 300px;
+        top: -90px;
+    }
+}
+License Terms
